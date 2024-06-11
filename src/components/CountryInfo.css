@@ -1,19 +1,19 @@
 .country-list {
-    display: flex; /* Используем flex-контейнер */
-    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку при необходимости */
-    justify-content: center; /* Выравниваем элементы по центру горизонтально */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
   
   .country-list button {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Добавляем отступ между кнопками */
-    margin-bottom: 10px; /* Добавляем отступ снизу каждой кнопке */
+    margin-right: 10px; 
+    margin-bottom: 10px; 
   }
   
   .country-list button img {
-    width: 50px; /* Устанавливаем одинаковую ширину для всех изображений */
-    height: auto; /* Поддерживаем пропорции */
-    margin-right: 5px; /* Добавляем отступ справа от изображения */
+    width: 50px; 
+    height: auto; 
+    margin-right: 5px;
   }
   

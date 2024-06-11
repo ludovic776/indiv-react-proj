@@ -21,6 +21,7 @@ const exchangeRates = {
 const CurrencyConverter = ({ setFromCurrency, setToCurrency, fromCurrency, toCurrency, amount, setAmount }) => {
   const [result, setResult] = useState('');
 
+    // Используем useEffect для вычисления результата при изменении суммы или валют
   useEffect(() => {
     if (amount) {
       const rate = exchangeRates[fromCurrency][toCurrency];
@@ -30,6 +31,7 @@ const CurrencyConverter = ({ setFromCurrency, setToCurrency, fromCurrency, toCur
     }
   }, [amount, fromCurrency, toCurrency]);
 
+    // Обработчик изменения суммы
   const handleAmountChange = (e) => {
     setAmount(e.target.value);
   };

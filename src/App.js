@@ -1,15 +1,15 @@
-// App.js
-
 import React, { useState } from 'react';
 import './style.css';
 import CurrencyConverter from './components/CurrencyConverter';
-import CountryInfo from './components/CountryInfo'; // Импортируем компонент
+import CountryInfo from './components/CountryInfo'; 
 
 function App() {
+  // Управление состоянием валют и суммой для конвертера
   const [fromCurrency, setFromCurrency] = useState('KZT');
   const [toCurrency, setToCurrency] = useState('RUB');
   const [amount, setAmount] = useState('');
 
+  // Определение популярных обменов валют
   const popularExchanges = [
     { from: 'USD', to: ['CHF', 'JPY'] },
     { from: 'USD', to: ['CNY', 'EUR'] },
@@ -18,12 +18,14 @@ function App() {
     { from: 'USD', to: ['CAD', 'SEK'] }
   ];
 
+  // Обработчик клика для популярных обменов валют
   const handlePopularExchangeClick = (from, to) => {
     setFromCurrency(from);
     setToCurrency(to);
     setAmount(1);
   };
 
+  // Обработчик клика для перемещения к секции "Популярные обмены валют"
   const handleMenuClick = (section) => {
     const element = document.getElementById(section);
     if (element) {
@@ -31,6 +33,7 @@ function App() {
     }
   };
 
+  // Информация о различных странах
   const countriesData = [
     {
       name: 'Казахстан',
@@ -101,9 +104,11 @@ function App() {
       capital: 'Прага',
       population: '10,708,981',
       region: 'Европа'
-    },
+    }
   ];
+  
 
+  // Управление выбранной страной
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   return (
@@ -156,4 +161,3 @@ function App() {
 }
 
 export default App;
-

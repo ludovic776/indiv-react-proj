@@ -1,5 +1,3 @@
-// CountryInfo.js
-
 import React from 'react';
 import './CountryInfo.css';  
 
@@ -15,7 +13,6 @@ const CountryInfo = ({ country }) => {
         <p><strong>Столица:</strong> {country.capital}</p>
         <p><strong>Население:</strong> {country.population}</p>
         <p><strong>Регион:</strong> {country.region}</p>
-        {/* Другие интересные факты о стране */}
       </div>
     </div>
   );
