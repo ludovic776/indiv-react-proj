@@ -1,0 +1,85 @@
+/* src/style.css */
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    padding: 5px;
+  }
+  
+  nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a,
+  nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  .popular-exchanges {
+    margin-top: 50px;
+  }
+  
+  .popular-exchanges h2 {
+    margin-bottom: 20px;
+  }
+  
+  .exchanges-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .exchange-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .exchange-row button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .exchange-row button:hover {
+    background-color: #0056b3;
+  }
+  
